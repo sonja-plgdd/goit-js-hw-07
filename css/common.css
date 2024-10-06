@@ -12,3 +12,266 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+
+
+/* task-1 */
+
+ul, ol {
+  list-style-type: none;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 392px;
+  height: auto;
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  max-width: 360px;
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px 8px 16px;
+}
+
+/* task-2  */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.gallery li img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* task-3 */
+
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  transition: border .15s cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: none;
+}
+
+#name-input:hover {
+  border: 1px solid #000;
+}
+
+
+#name-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.greeting {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+ }
+
+/* task-4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.login-form label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  transition: border .15s cubic-bezier(0.075, 0.82, 0.165, 1);
+  outline: none;
+}
+
+.login-form input:hover {
+  border: 1px solid #000;
+}
+
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+/* task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget p {
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.widget button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.widget button:hover {
+  background-color: #6c8cff;
+}
+
+/* task-6 */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  display: flex;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+#controls input:hover {
+  border: 1px solid #000;
+  appearance: none;
+}
+
+#controls input::-webkit-outer-spin-button,
+#controls input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#controls button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.create-btn {
+  background-color: #4e75ff;
+}
+
+.create-btn:hover {
+  background-color: #6c8cff;
+}
+
+.destroy-btn {
+  background-color: #ff4e4e;
+}
+
+.destroy-btn:hover {
+  background-color: #ff7070;;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  border-radius: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 28px;
+  max-width: 486px;
+  height: auto;
+  background-color: #f6f6fe;
+}
