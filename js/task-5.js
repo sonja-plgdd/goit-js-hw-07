@@ -1,4 +1,4 @@
-'use strcit'
+'use strict'
 
 const button = document.querySelector('.change-color');
 const background = document.querySelector('body');
